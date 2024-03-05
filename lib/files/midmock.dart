@@ -256,7 +256,9 @@ IconButton(
             return Text(snapshot.error.toString());
           }
 
-          return CircularProgressIndicator();
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
         }),)
           
         ),
